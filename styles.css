@@ -1,0 +1,17 @@
+.header {
+    font-size: 40px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: 5px;
+}
+
+.choice {
+    border: 20px solid rgb(232, 248, 5);
+}

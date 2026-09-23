@@ -1,0 +1,25 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(211, 235, 255);
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font:
+    14px/1.5 "microsoft yahei",
+    "Hiragino Sans GB",
+    "heiti SC",
+    "WenQuanYi Micro Hei",
+    sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}

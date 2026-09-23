@@ -9,12 +9,6 @@ function getComputerChoice() {
     return "paper";
   }
 }
-console.log(getComputerChoice());
-
-function getHumanChoice() {
-  let humanChoice = prompt("What's your choice? Rock or Scissors or Paper?");
-  return humanChoice;
-}
 
 function playGame() {
   let humanScore = 0;
@@ -40,12 +34,13 @@ function playGame() {
     }
   }
 
-  for ( let i = 0; i < 5; i++) {
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
-
-    playRound(humanSelection, computerSelection);
-  }
+  document.querySelectorAll(".choices").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const humanSelection = btn.dataset.choice;
+      const computerSelection = getComputerChoice();
+      playRound(humanSelection, computerSelection);
+    });
+  });
 
   if (humanScore > computerScore) {
     console.log(`You win the game! ${humanScore} - ${computerScore}`);
