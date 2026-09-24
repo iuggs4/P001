@@ -5,10 +5,6 @@
   background-color: rgb(211, 235, 255);
 }
 
-li {
-  list-style: none;
-}
-
 body {
   font:
     14px/1.5 "microsoft yahei",
@@ -16,10 +12,10 @@ body {
     "heiti SC",
     "WenQuanYi Micro Hei",
     sans-serif;
+    line-height: 1.6;
   color: #333;
 }
 
-a {
-  text-decoration: none;
-  color: #333;
+li {
+    list-style: none;
 }

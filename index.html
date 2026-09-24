@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>石头剪刀布</title>
-    <script src="script.js"></script>
+    <title>石头剪刀布游戏</title>
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="header">石头剪刀布</div>
-    <div class="choices">
-        <button class="choice" choice-data="rock"></button>
-        <button class="choice" choice-data="scissors"></button>
-        <button class="choice" choice-data="paper"></button>
+    <div class="container">
+        <div class="header">石头or剪刀or布</div>
+        <div class="body">
+            <div class="information">
+                Player:&nbsp;<span id="humanScore">0</span>
+                &nbsp;&nbsp;&nbsp;
+                Computer:&nbsp;<span id="computerScore">0</span>
+            </div>
+            <div class="computerChoices">
+                <span class="choiceC" data-choice="rock">👊</span>
+                <span class="choiceC" data-choice="scissors">✂️</span>
+                <span class="choiceC" data-choice="paper">🖐️</span>
+            </div>
+            <div id="roundResult">开始游戏吧！</div>
+            <div class="humanChoices">
+                <button class="choiceH" data-choice="rock">👊</button>
+                <button class="choiceH" data-choice="scissors">✂️</button>
+                <button class="choiceH" data-choice="paper">🖐️</button>
+            </div>
+        </div>
+        <div id="result"></div>
     </div>
-    <div class="result"></div>
-    <div class="scores"></div>
-    
-
+    <script src="script.js"></script>
 </body>
 </html>
