@@ -1,2 +1,2 @@
-# Project_Rock and Scissors and Paper(no UI)
+# Project_Rock and Scissors and Paper(UI)
 ##  Base on JavaScript
